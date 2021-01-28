@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
+## Clone specific tag ( Project Levels )
+Run `git clone -b level.1 https://github.com/nervelife/angular-material-design-webapp` Setup Development Environment for Angular
+Run `git clone -b level.2 https://github.com/nervelife/angular-material-design-webapp level2` 
+Angular Modules, Components, Services & Routers
+Run `git clone -b level.3 https://github.com/nervelife/angular-material-design-webapp level3` Angular Material layouts, components and Theming
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
