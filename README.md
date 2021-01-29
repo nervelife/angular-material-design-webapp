@@ -8,6 +8,9 @@ Run `git clone -b level.2 https://github.com/nervelife/angular-material-design-w
 Angular Modules, Components, Services & Routers
 Run `git clone -b level.3 https://github.com/nervelife/angular-material-design-webapp level3` Angular Material layouts, components and Theming
 
+## Install
+After cloning you must Run `npm install` to install dependecies.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

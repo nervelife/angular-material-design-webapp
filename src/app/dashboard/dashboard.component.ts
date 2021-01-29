@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { MatDialog } from '@angular/material/dialog';
+import { ContactComponent } from '../dialogs/contact/contact.component';
+import { ContactInfo } from '../model';
 
 @Component({
   selector: 'app-dashboard',
@@ -29,5 +32,15 @@ export class DashboardComponent {
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver,
+              public dialog: MatDialog) {}
+
+  showContactDialog(): void {
+    const dialogRef = this.dialog.open(ContactComponent, { width: '900px', data: null});
+    dialogRef.afterClosed().subscribe(
+      (result: ContactInfo) => {
+        console.log('Recieved Data: ' + result.name);
+      }
+    );
+  }
 }

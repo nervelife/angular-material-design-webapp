@@ -12,6 +12,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -28,7 +29,19 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule
+  ],
+  exports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatDialogModule
   ]
 })
 export class MaterialModule { }
