@@ -4,6 +4,7 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactComponent } from '../dialogs/contact/contact.component';
 import { ContactInfo } from '../model';
+import { SomaService } from '../soma.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -33,6 +34,7 @@ export class DashboardComponent {
   );
 
   constructor(private breakpointObserver: BreakpointObserver,
+              private somaService: SomaService,
               public dialog: MatDialog) {}
 
   showContactDialog(): void {
@@ -42,5 +44,9 @@ export class DashboardComponent {
         console.log('Recieved Data: ' + result.name);
       }
     );
+  }
+
+  toggleMenu(): void {
+    this.somaService.menuToggleSub.next();
   }
 }

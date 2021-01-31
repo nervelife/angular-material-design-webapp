@@ -14,10 +14,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 
+import { DateAgoPipe } from '../pipes/date-ago.pipe';
+
 
 
 @NgModule({
-  declarations: [NavigationComponent, DashboardComponent],
+  declarations: [NavigationComponent, DashboardComponent, DateAgoPipe],
   imports: [
     RouterModule,
     CommonModule,
@@ -30,7 +32,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   exports: [
     MatToolbarModule,
@@ -41,7 +43,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    DateAgoPipe
   ]
 })
 export class MaterialModule { }

@@ -15,7 +15,7 @@ import { ContactComponent } from './dialogs/contact/contact.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
